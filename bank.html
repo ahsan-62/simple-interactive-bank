@@ -12,21 +12,68 @@
         Simple Interactive <span class="font-bold text-blue-500">Bank</span>
       </h1>
     </header>
+
     <main>
+      <!-- deposite and Withdraw start-->
       <section class="w-3/4 mx-auto mt-12 grid grid-cols-3 gap-4">
         <div class="bg-green-300 p-8 rounded">
           <h1>Deposit</h1>
-          <p>$0</p>
+          <p>$ <span id="deposit-total">00</span></p>
         </div>
         <div class="bg-orange-300 p-8 rounded">
           <h1>Withdraw</h1>
-          <p>$0</p>
+          <p>$<span id="withdraw-total">00</span></p>
         </div>
         <div class="bg-cyan-400 p-8 rounded">
           <h1>Balance</h1>
-          <p>$1235</p>
+          <p>$<span id="balance-total">00</span></p>
         </div>
       </section>
+      <!-- deposite and Withdraw end -->
+
+      <section class="w-3/4 mx-auto mt-16 grid grid-cols-2 gap-4">
+        <div class="bg-fuchsia-300 p-8 rounded">
+          <h1 class="text-2xl text-white">Please Deposit</h1>
+          <div class="p-4">
+            <input
+              class="border-2 border-gray-200 rounded block w-3/4 mb-4 p-2"
+              type="text"
+              name=""
+              id="deposit-field"
+              placeholder="$ amount you want to deposit"
+            />
+            <button
+              id="btn-deposit"
+              class="bg-orange-500 font-semibold px-6 py-2 text-white rounded"
+              type="button"
+            >
+              Deposit
+            </button>
+          </div>
+        </div>
+        <div class="bg-fuchsia-400 p-8 rounded">
+          <h1 class="text-2xl text-white">Please Withdraw</h1>
+          <div class="p-4">
+            <input
+              class="border-2 border-gray-200 rounded block w-3/4 mb-4 p-2"
+              type="text"
+              name=""
+              id="withdraw-field"
+              placeholder="$ amount you want to withdraw"
+            />
+            <button
+              id="withdraw-btn"
+              class="bg-orange-500 font-semibold px-6 py-2 text-white rounded"
+              type="button"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <script src="js/deposit.js"></script>
+      <script src="js/withdraw.js"></script>
     </main>
   </body>
 </html>
